@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Qadam AI — контент и маркетинг с помощью искусственного интеллекта для малого бизнеса в Казахстане.">
+<meta name="theme-color" content="#090d1b">
+<title>Qadam AI — маркетинг начинается с шага</title>
+<style>
+:root{--bg:#090d1b;--panel:#11182b;--panel2:#151f36;--line:rgba(255,255,255,.1);--text:#f4f7ff;--muted:#a5b0c7;--cyan:#67e8f9;--blue:#7195ff;--green:#8ef0c2;--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,rgba(80,113,255,.18),transparent 38%),radial-gradient(ellipse at 0% 30%,rgba(44,208,220,.09),transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(9,13,27,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em;font-size:21px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),#7288ff);display:grid;place-items:center;color:#081020;font-weight:950;box-shadow:0 8px 30px #67e8f933}.navlinks{display:flex;align-items:center;gap:27px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:13px;padding:13px 19px;background:linear-gradient(110deg,var(--cyan),#91a6ff);color:#07101e;font-weight:800;cursor:pointer;transition:.2s;box-shadow:0 10px 28px #5bd8f522}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.secondary{background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--text);box-shadow:none}.btn.small{padding:10px 14px;font-size:13px}
+.hero{padding:92px 0 76px;display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border:1px solid #67e8f933;background:#67e8f90c;border-radius:100px;padding:8px 12px}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}h1{font-size:clamp(42px,6vw,70px);line-height:1.03;letter-spacing:-.055em;margin:23px 0 20px}h1 span{background:linear-gradient(100deg,var(--cyan),#a6b6ff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:18px;color:var(--muted);max-width:580px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:29px;color:#8996b1;font-size:12px}.trust span:before{content:"✓";color:var(--green);margin-right:7px}
+.preview{border:1px solid #ffffff1c;border-radius:26px;padding:18px;background:linear-gradient(145deg,#17223b,#0d1426);box-shadow:0 28px 90px #0008;transform:rotate(1deg)}.previewtop{display:flex;align-items:center;justify-content:space-between;padding:4px 4px 17px;color:var(--muted);font-size:12px}.pills{display:flex;gap:5px}.pills i{width:7px;height:7px;border-radius:50%;background:#71809c}.mockpost{background:#f4f5f8;color:#172033;border-radius:17px;padding:19px;overflow:hidden}.mocktag{font-size:10px;color:#61708a;font-weight:800;letter-spacing:.13em}.mockpost h3{font-size:24px;line-height:1.12;margin:12px 0 8px;letter-spacing:-.04em}.mockpost p{font-size:12px;color:#5c6679;margin:0 0 15px}.mockvisual{height:125px;border-radius:12px;background:linear-gradient(135deg,#132c46,#277c89 55%,#a0d9c5);display:flex;align-items:center;justify-content:center;color:white;font-size:38px;font-weight:900;letter-spacing:-.08em}.mockfoot{display:flex;justify-content:space-between;align-items:center;margin-top:13px;font-size:10px;color:#68748a}.status{color:#087b5c;font-weight:800}.floating{margin:-10px 0 0 18px;display:inline-flex;align-items:center;gap:8px;background:#18243c;border:1px solid var(--line);border-radius:13px;padding:11px 14px;font-size:12px;color:#dbe6ff;box-shadow:0 12px 35px #0005}
+section{padding:76px 0}.sectionhead{text-align:center;max-width:680px;margin:0 auto 38px}.kicker{color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.sectionhead h2{font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.045em;margin:12px 0}.sectionhead p{color:var(--muted);margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature,.pricecard,.panel,.step{background:linear-gradient(145deg,#141e34,#101729);border:1px solid var(--line);border-radius:var(--radius);padding:24px}.feature .ico{width:45px;height:45px;border-radius:14px;background:#67e8f916;border:1px solid #67e8f92b;display:grid;place-items:center;font-size:21px}.feature h3{margin:17px 0 7px;font-size:18px}.feature p{margin:0;color:var(--muted);font-size:14px}
+.demo{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;align-items:stretch}.panel h3{margin:0 0 6px;font-size:21px}.sub{color:var(--muted);font-size:13px;margin:0 0 20px}.field{display:grid;gap:7px;margin:14px 0}.field label{font-size:13px;color:#c7d1e5;font-weight:650}.field input,.field select,.field textarea{width:100%;border:1px solid #ffffff20;background:#0b1222;color:white;border-radius:12px;padding:12px 13px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #67e8f91a}.field textarea{resize:vertical;min-height:82px}.output{background:#0b1222;border:1px solid var(--line);border-radius:15px;padding:19px;min-height:280px;white-space:pre-wrap;color:#dce6fa;font-size:14px}.output.empty{display:grid;place-items:center;text-align:center;color:#8290aa;white-space:normal}.output strong{color:var(--cyan)}.tiny{font-size:11px;color:#8592aa;margin-top:12px}.copyrow{display:flex;justify-content:flex-end;margin-top:12px}
+.pricing{align-items:stretch}.pricecard{position:relative;display:flex;flex-direction:column}.pricecard.popular{border-color:#67e8f97a;box-shadow:0 0 0 1px #67e8f91c,0 20px 60px #0003}.ribbon{position:absolute;top:17px;right:17px;font-size:10px;font-weight:850;color:#08121f;background:var(--green);padding:5px 9px;border-radius:100px}.plan{color:var(--cyan);font-size:12px;font-weight:850;letter-spacing:.12em}.price{font-size:35px;font-weight:850;letter-spacing:-.05em;margin:12px 0 0}.price small{font-size:13px;color:var(--muted);font-weight:500;letter-spacing:0}.price-desc{font-size:13px;color:var(--muted);min-height:42px}.features{list-style:none;padding:0;margin:18px 0 24px;display:grid;gap:11px;color:#d5def0;font-size:13px}.features li:before{content:"✓";color:var(--green);margin-right:9px}.pricecard .btn{margin-top:auto}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step b{display:grid;place-items:center;width:33px;height:33px;border-radius:10px;background:#67e8f91b;color:var(--cyan);margin-bottom:14px}.step h3{font-size:15px;margin:0 0 6px}.step p{font-size:12px;color:var(--muted);margin:0}
+.order{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}.orderinfo{padding:12px 0}.orderinfo h2{font-size:38px;line-height:1.08;letter-spacing:-.05em;margin:13px 0}.orderinfo p{color:var(--muted)}.note{border-left:2px solid var(--cyan);padding:10px 14px;color:#b8c5dc;font-size:12px;margin-top:22px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 13px}.formgrid .full{grid-column:1/-1}.success{display:none;margin-top:13px;padding:13px;border-radius:12px;background:#8ef0c21a;border:1px solid #8ef0c244;color:#baffdc;font-size:13px}
+.faq{max-width:760px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:700}.faq details p{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#8996b1;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot strong{color:#eaf2ff}
+.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#eaf8ff;color:#07101e;padding:12px 18px;border-radius:12px;font-weight:750;font-size:13px;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:35px;padding-top:65px}.preview{max-width:540px;width:100%;margin:auto}.demo,.order{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}.navlinks{display:none}.hero{padding:52px 0 45px}h1{font-size:43px}.lead{font-size:16px}.actions .btn{width:100%}section{padding:55px 0}.grid3,.steps{grid-template-columns:1fr}.feature,.pricecard,.panel,.step{padding:20px}.formgrid{grid-template-columns:1fr}.formgrid .full{grid-column:auto}.foot{align-items:flex-start;flex-direction:column}.mockpost h3{font-size:21px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">Q</span> qadam<span style="color:var(--cyan)">AI</span></a>
+    <nav class="navlinks"><a href="#features">Возможности</a><a href="#demo">Демо</a><a href="#pricing">Тарифы</a><a href="#how">Как это работает</a></nav>
+    <a class="btn small" href="#order">Оставить заявку ↗</a>
+  </div>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow"><span class="dot"></span> AI-МАРКЕТИНГ ДЛЯ МАЛОГО БИЗНЕСА</div>
+    <h1>Ваш бизнес.<br><span>Больше идей.</span><br>Меньше рутины.</h1>
+    <p class="lead">Qadam AI помогает небольшим компаниям в Казахстане создавать контент, рекламные тексты и идеи для продвижения — быстрее и проще.</p>
+    <div class="actions"><a class="btn" href="#order">Попробовать Qadam AI <span>→</span></a><a class="btn secondary" href="#demo">Посмотреть демо</a></div>
+    <div class="trust"><span>Русский и казахский контент</span><span>Без сложных настроек</span><span>Для малого бизнеса</span></div>
+  </div>
+  <div>
+    <div class="preview">
+      <div class="previewtop"><span>QADAM AI / CONTENT STUDIO</span><span class="pills"><i></i><i></i><i></i></span></div>
+      <div class="mockpost">
+        <div class="mocktag">ВАШ БИЗНЕС · ВАШ СТИЛЬ</div>
+        <h3>Свежий образ<br>начинается с тебя.</h3>
+        <p>Пора обновить стиль? Запишись на удобное время — команда уже ждёт тебя.</p>
+        <div class="mockvisual">STYLE / 01</div>
+        <div class="mockfoot"><span>ИДЕЯ ПОСТА ДЛЯ BARBERSHOP</span><span class="status">● ГОТОВО</span></div>
+      </div>
+    </div>
+    <div class="floating">✦ Контент-идея подготовлена за секунды</div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sectionhead"><div class="kicker">Что умеет Qadam AI</div><h2>Маркетинговая команда<br>в одном простом сервисе</h2><p>Помогаем регулярно публиковать полезный и привлекательный контент, даже если в команде нет отдельного маркетолога.</p></div>
+    <div class="grid3">
+      <article class="feature"><div class="ico">✍️</div><h3>Рекламные тексты</h3><p>Идеи, заголовки и описания для публикаций, акций и специальных предложений.</p></article>
+      <article class="feature"><div class="ico">🗓️</div><h3>Контент-планы</h3><p>Темы и рубрики, чтобы не приходилось каждый день думать, о чём написать.</p></article>
+      <article class="feature"><div class="ico">💬</div><h3>Ответы клиентам</h3><p>Шаблоны вежливых ответов на частые вопросы о цене, услугах и записи.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <div class="sectionhead"><div class="kicker">Попробуйте сами</div><h2>Демонстрация генератора</h2><p>Укажите тип бизнеса и услугу — получите пример рекламного текста прямо на странице.</p></div>
+    <div class="demo">
+      <div class="panel">
+        <h3>Создать рекламный текст</h3><p class="sub">Заполните несколько полей.</p>
+        <div class="field"><label for="business">Тип бизнеса</label><select id="business"><option value="барбершопа">Барбершоп</option><option value="кофейни">Кофейня</option><option value="магазина одежды">Магазин одежды</option><option value="фитнес-клуба">Фитнес-клуб</option><option value="салона красоты">Салон красоты</option><option value="вашего бизнеса">Другой бизнес</option></select></div>
+        <div class="field"><label for="service">Услуга или продукт</label><input id="service" maxlength="90" placeholder="Например: мужская стрижка"></div>
+        <div class="field"><label for="audience">Для кого?</label><input id="audience" maxlength="90" placeholder="Например: для тех, кто ценит стиль"></div>
+        <div class="field"><label for="tone">Стиль текста</label><select id="tone"><option value="friendly">Дружелюбный</option><option value="bold">Энергичный</option><option value="premium">Премиальный</option></select></div>
+        <button class="btn" id="generate" style="width:100%">✦ Сгенерировать текст</button>
+        <p class="tiny">Демо работает локально на шаблонах и не отправляет ваши данные на сервер.</p>
+      </div>
+      <div class="panel">
+        <h3>Ваш результат</h3><p class="sub">Пример рекламной публикации.</p>
+        <div id="result" class="output empty">✦<br>Здесь появится ваш рекламный текст.<br>Заполните форму и нажмите «Сгенерировать».</div>
+        <div class="copyrow"><button class="btn secondary small" id="copy" disabled>Скопировать текст</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sectionhead"><div class="kicker">Простые тарифы</div><h2>Выберите свой Qadam</h2><p>Стартовые цены для проверки спроса. Состав и стоимость можно согласовать перед заказом.</p></div>
+    <div class="grid3 pricing">
+      <article class="pricecard"><div class="plan">START</div><div class="price">15 000 ₸ <small>/ месяц</small></div><p class="price-desc">Для бизнеса, который хочет начать регулярно публиковаться.</p><ul class="features"><li>8 рекламных публикаций</li><li>8 текстов</li><li>Контент-план на месяц</li><li>10 шаблонов ответов</li></ul><a class="btn secondary choose" data-plan="START — 15 000 ₸" href="#order">Выбрать START</a></article>
+      <article class="pricecard popular"><span class="ribbon">ПОПУЛЯРНЫЙ</span><div class="plan">PRO</div><div class="price">30 000 ₸ <small>/ месяц</small></div><p class="price-desc">Для активного продвижения и стабильного контента.</p><ul class="features"><li>16 публикаций</li><li>16 рекламных текстов</li><li>Контент-план</li><li>20 шаблонов ответов</li><li>Идеи для Reels</li></ul><a class="btn choose" data-plan="PRO — 30 000 ₸" href="#order">Выбрать PRO →</a></article>
+      <article class="pricecard"><div class="plan">BUSINESS</div><div class="price">50 000 ₸ <small>/ месяц</small></div><p class="price-desc">Для тех, кому нужен более индивидуальный подход.</p><ul class="features"><li>20 публикаций</li><li>20 рекламных текстов</li><li>30 идей для Reels</li><li>Контент-стратегия</li><li>Индивидуальный стиль</li><li>Еженедельный отчёт</li></ul><a class="btn secondary choose" data-plan="BUSINESS — 50 000 ₸" href="#order">Выбрать BUSINESS</a></article>
+    </div>
+    <p class="tiny" style="text-align:center;margin-top:17px">Цены являются предложением для тестирования продукта, а не публичной офертой. Итоговый объём работ подтверждается отдельно.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sectionhead"><div class="kicker">Понятный процесс</div><h2>От заявки до готового контента</h2><p>Без сложного внедрения и долгих согласований.</p></div>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Оставьте заявку</h3><p>Расскажите о бизнесе и выберите тариф.</p></div>
+      <div class="step"><b>02</b><h3>Обсудим задачу</h3><p>Уточним аудиторию, стиль и ваши цели.</p></div>
+      <div class="step"><b>03</b><h3>Подготовим контент</h3><p>Создадим и проверим материалы.</p></div>
+      <div class="step"><b>04</b><h3>Получите результат</h3><p>Передадим готовые тексты и идеи.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap order">
+    <div class="orderinfo">
+      <div class="kicker">Начнём сотрудничество</div>
+      <h2>Сделайте первый шаг с Qadam AI.</h2>
+      <p>Оставьте контакт и кратко опишите задачу. Мы подготовим ответ и согласуем следующий шаг.</p>
+      <div class="note">На этой демо-версии заявка формируется на вашем устройстве и копируется в буфер обмена. Она не отправляется автоматически на сервер.</div>
+    </div>
+    <form class="panel" id="orderForm">
+      <h3>Заявка на услугу</h3><p class="sub">Поля со звёздочкой обязательны.</p>
+      <div class="formgrid">
+        <div class="field"><label for="name">Ваше имя *</label><input id="name" required maxlength="70" placeholder="Как к вам обращаться"></div>
+        <div class="field"><label for="contact">Телефон или Telegram *</label><input id="contact" required maxlength="100" placeholder="+7... или @username"></div>
+        <div class="field full"><label for="company">Название бизнеса *</label><input id="company" required maxlength="100" placeholder="Например, Coffee Point"></div>
+        <div class="field full"><label for="plan">Тариф</label><select id="plan"><option>Пока не выбрал(а)</option><option>START — 15 000 ₸</option><option>PRO — 30 000 ₸</option><option>BUSINESS — 50 000 ₸</option></select></div>
+        <div class="field full"><label for="details">Что вам нужно?</label><textarea id="details" maxlength="700" placeholder="Например: нужны идеи и тексты для Instagram..."></textarea></div>
+      </div>
+      <button class="btn" type="submit" style="width:100%">Сформировать заявку →</button>
+      <div class="success" id="success" role="status">Заявка подготовлена. Скопируйте её и отправьте Qadam AI через удобный канал связи.</div>
+      <button class="btn secondary small" type="button" id="copyOrder" style="display:none;width:100%;margin-top:10px">Скопировать заявку</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sectionhead"><div class="kicker">Вопросы и ответы</div><h2>Часто спрашивают</h2></div>
+    <div class="faq">
+      <details><summary>Qadam AI — это уже автоматическая нейросеть?</summary><p>Это ранний MVP. На сайте работает демонстрационный генератор на шаблонах. Реальную AI-модель можно подключить через серверный backend и API, когда появится бюджет и подтверждённый спрос.</p></details>
+      <details><summary>Нужно ли устанавливать приложение?</summary><p>Нет. Сайт открывается в браузере на телефоне, планшете и компьютере.</p></details>
+      <details><summary>Можно ли заказать контент на казахском языке?</summary><p>Да. Язык и стиль материалов согласуются при оформлении заказа. Перед передачей текст нужно проверить на грамотность и точность.</p></details>
+      <details><summary>Как происходит оплата?</summary><p>В этой версии оплата на сайте не подключена. Условия и безопасный способ оплаты согласуются с исполнителем отдельно.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>QADAM AI</strong> · Маркетинг начинается с шага.</div><div>© <span id="year"></span> Qadam AI · Казахстан</div><div><a href="#home">Наверх ↑</a></div></div></footer>
+<div class="toast" id="toast">Скопировано</div>
+<script>
+const $ = (id) => document.getElementById(id);
+let generatedText = "";
+function showToast(message){const t=$("toast");t.textContent=message;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2200)}
+function buildAd(){
+ const business=$("business").value, service=$("service").value.trim()||"наши услуги", audience=$("audience").value.trim()||"всех, кто ценит качество", tone=$("tone").value;
+ const openers={friendly:"Хороший день начинается с правильного выбора!",bold:"Пора попробовать что-то новое!",premium:"Внимание к деталям меняет всё."};
+ const middle={friendly:`В ${business} мы рады помочь ${audience}. Попробуйте: ${service}.`,bold:`Выбирайте ${service} в ${business} и почувствуйте разницу. Для ${audience} — самое время действовать!`,premium:`Откройте для себя ${service}. В ${business} мы делаем акцент на качестве, внимании и комфорте.`};
+ const endings={friendly:"Напишите нам — с удовольствием ответим на ваши вопросы.",bold:"Свяжитесь с нами и узнайте подробности уже сегодня.",premium:"Свяжитесь с нами, чтобы узнать детали и подобрать удобное время."};
+ generatedText=`${openers[tone]}\n\n${middle[tone]}\n\n${endings[tone]}\n\n#Казахстан #${business.replaceAll(" ","")} #QadamAI`;
+ $("result").classList.remove("empty");$("result").textContent=generatedText;$("copy").disabled=false;
+}
+$("generate").addEventListener("click",buildAd);
+$("copy").addEventListener("click",async()=>{if(!generatedText)return;try{await navigator.clipboard.writeText(generatedText);showToast("Текст скопирован")}catch(e){showToast("Не удалось скопировать — выделите текст вручную")}});
+document.querySelectorAll(".choose").forEach(a=>a.addEventListener("click",()=>{$("plan").value=a.dataset.plan}));
+let orderText="";
+$("orderForm").addEventListener("submit",(e)=>{
+ e.preventDefault();
+ orderText=`ЗАЯВКА QADAM AI\nИмя: ${$("name").value.trim()}\nКонтакт: ${$("contact").value.trim()}\nБизнес: ${$("company").value.trim()}\nТариф: ${$("plan").value}\nЗадача: ${$("details").value.trim()||"Не указана"}`;
+ $("success").style.display="block";$("copyOrder").style.display="block";
+});
+$("copyOrder").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(orderText);showToast("Заявка скопирована")}catch(e){showToast("Скопируйте заявку вручную")}});
+$("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
